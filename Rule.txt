@@ -1,0 +1,3 @@
+SELECT uniqueCount(httpResponseCode)
+FROM Transaction
+WHERE appName = 'service-name' AND httpResponseCode LIKE '5%'
