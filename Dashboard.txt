@@ -1,0 +1,1 @@
+SELECT percentage(count(*), WHERE error is true) AS 'Error rate' FROM Transaction FACET `appName` LIMIT 346 SINCE 1 days ago EXTRAPOLATE WHERE appName NOT LIKE 'uat%' AND appName NOT LIKE 'dev%' AND appName NOT LIKE 'preprod%' AND appName NOT LIKE 'company-preprod%' AND appName NOT LIKE '%test%'
