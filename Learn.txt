@@ -1,0 +1,11 @@
+404 Not Found": İstenen kaynak sunucuda bulunamadığında döndürülen hata kodudur. 
+                Bu durumda, istenen web sayfası veya kaynak sunucuda mevcut değildir.
+
+"500 Internal Server Error": Sunucuda bir iç hata meydana geldiğinde döndürülen hata kodudur. 
+                             Bu durumda, sunucu bir sorunla karşılaşmıştır ve isteği başarılı bir şekilde işleyememiştir.
+
+"403 Forbidden": İstek yapılan kaynağa erişim izni olmadığında döndürülen hata kodudur. 
+                 Bu durumda, sunucu isteği reddetmiştir ve erişim izni olmayan bir kaynağa erişilmeye çalışılmıştır.
+
+"401 Unauthorized": İstek yapılan kaynağa erişmek için kimlik doğrulaması gerektiğinde döndürülen hata kodudur. 
+                    Bu durumda, istek yapılan kaynağa erişmek için kullanıcı tarafından kimlik doğrulaması gerekmektedir.
