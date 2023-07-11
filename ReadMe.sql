@@ -28,9 +28,9 @@ appName NOT LIKE 'preprod%' AND
 appName NOT LIKE 'vjoin-preprod%' AND 
 appName NOT LIKE '%test%'
 
-/* Response Code 500 */
+/* Response Code 200 */
 SELECT uniqueCount(httpResponseCode) FROM 
-Transaction FACET `appName` WHERE httpResponseCode LIKE '200' LIMIT 346 SINCE 1 days ago 
+Transaction FACET `appName` WHERE httpResponseCode NOT LIKE '200' LIMIT 346 SINCE 1 days ago 
 EXTRAPOLATE WHERE 
 appName NOT LIKE 'uat%' AND 
 appName NOT LIKE 'dev%' AND 
