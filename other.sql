@@ -1,0 +1,1 @@
+SELECT count(`apm.service.external.host.duration`) FROM Metric WHERE appName LIKE '%' SINCE LAST WEEK FACET external.host limit max
